@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="ja"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+<META NAME="ROBOTS" CONTENT="NOINDEX">
+
+<title>日記&gt;一覧</title>
+
+<link rel="stylesheet" type="text/css" href="../menu.css"><base target="diary">
+
+<script language="javascript" type="text/javascript">
+
+<!--
+
+function display(id) {
+
+	if (document.all) s = document.all[id].style;
+
+	else if (document.getElementById) s = document.getElementById(id).style;
+
+	else s = document.all[id].style;
+
+	if (s.display!='none') s.display = 'none';
+
+	else s.display = 'block';
+
+}
+
+//-->
+
+</script></head><body class=wide>
+<h1>Diary</h1><ul>
+
+<li><a href="./diary.php">最新の日記</a></li>
+
+<li><a href="./diary.php?date=someday">あのときのわし</a></li>
+
+<li><a href="javascript:onClick=display('past');" target="_self">過去ログ</a><ul id=past>
+
+</ul></li>
+
+<li><a href="javascript:onClick=display('cat');" target="_self">カテゴリ</a><ul id=cat>
+
+</ul>
+
+<li>検索<br>
+
+<form action="./diary.php" METHOD=GET style="display:inline;">
+
+<input type=text name=find value="">
+
+<input type=submit value="検索">
+
+</form>
+
+</ul>
+
+<script language="javascript" type="text/javascript">
+
+<!--
+
+document.write('<p class=info>クリックでリストを開きます。</p>');
+
+display('past'); display('cat');
+
+//-->
+
+</script></body></html>
